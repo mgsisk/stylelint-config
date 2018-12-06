@@ -20,7 +20,7 @@ configurations for CSS development.
 ## Installation
 
 ```sh
-npm install --dev @mgsisk/stylelint-config
+npm install --save-dev @mgsisk/stylelint-config
 ```
 
 ## Usage
