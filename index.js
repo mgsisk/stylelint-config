@@ -1,5 +1,7 @@
+/* eslint-disable sonarjs/no-duplicate-string */
+
 /**
- * stylelint configuration for general development.
+ * Stylelint configuration for general development.
  *
  * @type {Object}
  */
@@ -9,15 +11,15 @@ module.exports = {
     'stylelint-a11y',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-no-indistinguishable-colors',
-    'stylelint-order'
+    'stylelint-order',
   ],
-  extends: [ 'stylelint-config-recommended' ],
+  extends: ['stylelint-config-recommended'],
   rules: {
     // ----- Possible Errors ---------------------------------------------------
 
     'font-family-no-missing-generic-family-keyword': null,
-    'unit-no-unknown': [ true, {ignoreUnits: [ 'mfs', 'mlh', 'msu', 'vru' ]} ],
-    'property-no-unknown': [ true, {ignoreProperties: [ 'size' ]} ],
+    'unit-no-unknown': [true, {ignoreUnits: ['mfs', 'mlh', 'msu', 'vru']}],
+    'property-no-unknown': [true, {ignoreProperties: ['size']}],
     'block-no-empty': null,
 
     // ----- Limit Language Features -------------------------------------------
@@ -32,8 +34,8 @@ module.exports = {
     'property-no-vendor-prefix': true,
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-property-unit-whitelist': {
-      'font-size': [ 'mfs' ],
-      'line-height': [ 'mlh' ]
+      'font-size': ['mfs'],
+      'line-height': ['mlh'],
     },
     'declaration-no-important': true,
     'declaration-block-single-line-max-declarations': 1,
@@ -132,7 +134,8 @@ module.exports = {
     'media-query-list-comma-space-before': 'never',
     'at-rule-empty-line-before': [
       'always',
-      {except: ['blockless-after-same-name-blockless', 'first-nested'], ignore: ['after-comment']}
+      {except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignore: ['after-comment']},
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-newline-after': 'always-multi-line',
@@ -141,7 +144,8 @@ module.exports = {
     'at-rule-semicolon-space-before': 'never',
     'comment-empty-line-before': [
       'always',
-      {except: ['first-nested'], ignore: ['stylelint-commands']}
+      {except: ['first-nested'],
+        ignore: ['stylelint-commands']},
     ],
     'comment-whitespace-inside': 'always',
     indentation: 2,
@@ -170,4 +174,4 @@ module.exports = {
     'plugin/stylelint-no-indistinguishable-colors': true,
     'order/properties-alphabetical-order': true,
   },
-};
+}
