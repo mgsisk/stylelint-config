@@ -1,5 +1,6 @@
 .codeclimate.yml
 .editorconfig
+.eslintrc.js
 .markdownlint.json
 .travis.yml
 Brewfile
