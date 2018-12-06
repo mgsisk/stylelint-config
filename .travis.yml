@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+  - 'node'
+  - 'lts/*'
+
+matrix:
+  fast_finish: true
+
+install:
+  - npm install
