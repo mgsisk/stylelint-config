@@ -19,7 +19,7 @@ can be assigned to a contributor, organized with labels, and grouped into
 milestones to help drive development.
 
 [img-issues]: https://img.shields.io/github/issues/mgsisk/stylelint-config.svg?logo=github&logoColor=white
-[url-issues]: https://github.com/mgsisk/esling-config/issues
+[url-issues]: https://github.com/mgsisk/stylelint-config/issues
 
 ## [Contact Mike]
 
