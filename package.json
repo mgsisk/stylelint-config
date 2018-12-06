@@ -1,6 +1,6 @@
 {
   "name": "@mgsisk/stylelint-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Opinionated stylelint configurations for CSS development.",
   "main": "index.js",
   "scripts": {
