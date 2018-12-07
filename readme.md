@@ -30,7 +30,7 @@ npm install --save-dev @mgsisk/stylelint-config
 
 module.exports = {
   …
-  extends: [ '@mgsisk/stylelint-config' ],
+  extends: ['@mgsisk/stylelint-config'],
   …
 }
 ```
