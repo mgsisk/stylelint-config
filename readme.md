@@ -1,18 +1,18 @@
 # @mgsisk/stylelint-config
 
-[![Version 0.1.0][img-version]][url-version]
+[![Version 0.1.3][img-version]][url-version]
 [![Build status][img-build]][url-build]
 [![Maintainability grade][img-maintainability]][url-maintainability]
 [![Support development][img-support]][url-support]
 
 > Opinionated stylelint configurations for CSS development.
 
-The @mgsisk/stylelint-config package includes opinionated [stylelint]
+The @mgsisk/stylelint-config package includes opinionated [stylelint][]
 configurations for CSS development.
 
 - `@mgsisk/stylelint-config` – Standard configuration for general development.
 - `@mgsisk/stylelint-config-wordpress` – Customized version of
-  [stylelint-config-wordpress] for WordPress plugin and theme development.
+  [stylelint-config-wordpress][] for WordPress plugin and theme development.
 
 [stylelint]: https://stylelint.io
 [stylelint-config-wordpress]: https://github.com/WordPress-Coding-Standards/stylelint-config-wordpress
@@ -37,13 +37,13 @@ module.exports = {
 
 ## Support
 
-[Support] resources are available.
+[Support][] resources are available.
 
 [support]: https://github.com/mgsisk/stylelint-config/blob/master/support.md
 
 ## Contribute
 
-[Contributions] are always welcome.
+[Contributions][] are always welcome.
 
 [Contributions]: https://github.com/mgsisk/stylelint-config/blob/master/contributing.md
 

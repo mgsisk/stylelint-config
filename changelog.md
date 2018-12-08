@@ -1,21 +1,21 @@
 # Changelog
 
-## [0.1.3] (2018-12-06)
+## [0.1.3][] (2018-12-06)
 
 ### Fixed
 - Installation instructions in readme
 
-## [0.1.2] (2018-12-06)
+## [0.1.2][] (2018-12-06)
 
 ### Fixed
 - Broken URL's in repo documentation
 
-## [0.1.1] (2018-12-06)
+## [0.1.1][] (2018-12-06)
 
 ### Fixed
 - Linting issues
 
-## [0.1.0] (2018-12-06)
+## [0.1.0][] (2018-12-06)
 
 > Initial public release.
 

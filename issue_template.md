@@ -23,7 +23,7 @@
      the bug in -->
 <!-- For enhancements, delete this section -->
 
-- @mgsisk/stylelint-config <!-- The version of @mgsisk/stylelint-config you're using -->
-- stylelint <!-- The version of stylelint you're using -->
-- NPM <!-- The version of NPM you're using -->
-- Node <!-- The version of Node you're using -->
+- @mgsisk/stylelint-config <!-- version(s) -->
+- stylelint <!-- version(s) -->
+- NPM <!-- version(s) -->
+- Node <!-- version(s) -->
