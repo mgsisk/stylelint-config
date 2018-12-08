@@ -1,7 +1,8 @@
 .codeclimate.yml
 .editorconfig
 .eslintrc.js
-.markdownlint.json
+.remarkignore
+.remarkrc.js
 .travis.yml
 Brewfile
 issue_template.md
