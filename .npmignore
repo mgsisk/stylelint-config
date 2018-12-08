@@ -1,9 +1,12 @@
 .codeclimate.yml
 .editorconfig
 .eslintrc.js
+.nyc_output
 .remarkignore
 .remarkrc.js
 .travis.yml
+/coverage/
+/tests/
 Brewfile
 issue_template.md
 pull_request_template.md
