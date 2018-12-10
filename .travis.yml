@@ -1,11 +1,31 @@
 language: node_js
 
 node_js:
-  - 'node'
-  - 'lts/*'
+  - lts/*
+  - node
 
-matrix:
-  fast_finish: true
+env:
+  global:
+    - CC_TEST_REPORTER_ID=349f02fef2918c1f71d869a67be039003392207917ac4e8431c0d8988bcfc7bb
 
 install:
   - npm install
+  - mkdir tmp
+  - export PATH=$PATH:$(pwd)/tmp
+
+before_script:
+  - wget -O tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+  - chmod +x tmp/cc-test-reporter
+  - cc-test-reporter before-build
+
+after_script:
+  - cc-test-reporter after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
+
+deploy:
+  provider: npm
+  email: me@mgsisk.com
+  api_key:
+    secure: Nxcd0yNGI4GCTJqKi+AyK+ZGlE8bwcLLainMdbAnT37YhIHzE5i84Wn3OxHM5pwu+HS9+I+VZAEssiNZSRNYhAJwyMrYyRq5cOxZYTa/ie2Z4F5+tm+t+hBXl5RUQGLbusVZvg4HojmeoSTYwQ13irtYe/YxuwSkbgt9Chm19e+Cyb+aqsxrs4jYBzXNtNRki3AvOV0cPZEn87KKOn/9Pul4dv4VP8y5kJmNPg5zje+boKAdqfYL+fRTCVpUaxvDFjk5t2QqH2O6b7DqGVu+KoVSzvCAfxtKeqDDsMTxFF6N/yL7hQpX3cLAc/yyVULoKPFVITYAaaRR/IjDYvfwzTpSigYEBocaotUIGMZHctaB7PgB2nbLnya4bKzQYd+euBmZOifSajn/bLm1Tq5CGEzT6MvVrDExRv+Q6O40X/uY1NlAT9TeOdmsK5ziSdSVIR+X8uk8Nl7t+wt0BkvBLO2+wMmthSSCl29nfxn1aMpc/OnMexRaS/TWlbfy34hlLr+XD/cz5MzBXhgVy3CUR1NMSBJChznn3xM3re2PAVmmaRlZw8lZl9pE4w26Jx2Y/fs0//1qGIpHSpX/FgYj9EJ5wqicWBSM3xDrfQqlBiUEiSYsI4qUq2r3oLmrIAXONMu8zcL8mALX9eirTd1qGij7yQJnTx/HpmOx+0/7dak=
+  on:
+    repo: mgsisk/stylelint-config
+    tags: true
