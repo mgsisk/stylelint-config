@@ -12,7 +12,7 @@ The @mgsisk/stylelint-config package includes opinionated [stylelint][]
 configurations for CSS development.
 
 - `@mgsisk/stylelint-config` – Standard configuration for general development.
-- `@mgsisk/stylelint-config-wordpress` – Customized version of
+- `@mgsisk/stylelint-config/wordpress` – Customized version of
   [stylelint-config-wordpress][] for WordPress plugin and theme development.
 
 [stylelint]: https://stylelint.io
