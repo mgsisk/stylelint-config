@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.3.0][] (2018-12-10)
+
+### Added
+- `stylelint-use-nesting` plugin
+
 ## [0.2.0][] (2018-12-10)
 
 ### Changed
@@ -31,6 +36,7 @@
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
+[0.3.0]: https://github.com/mgsisk/eslint-config/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mgsisk/eslint-config/compare/v0.1.3...v0.2.0
 [0.1.3]: https://github.com/mgsisk/eslint-config/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/mgsisk/eslint-config/compare/v0.1.1...v0.1.2
