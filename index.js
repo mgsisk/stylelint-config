@@ -12,6 +12,7 @@ module.exports = {
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-no-indistinguishable-colors',
     'stylelint-order',
+    'stylelint-use-nesting',
   ],
   extends: ['stylelint-config-recommended'],
   rules: {
@@ -173,5 +174,6 @@ module.exports = {
     'plugin/declaration-block-no-ignored-properties': true,
     'plugin/stylelint-no-indistinguishable-colors': true,
     'order/properties-alphabetical-order': true,
+    'csstools/use-nesting': 'always',
   },
 }
