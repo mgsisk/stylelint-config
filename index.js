@@ -36,7 +36,7 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-property-unit-whitelist': {
       'font-size': ['mfs'],
-      'line-height': ['mlh'],
+      'line-height': ['mlh', 'vru'],
     },
     'declaration-no-important': true,
     'declaration-block-single-line-max-declarations': 1,
