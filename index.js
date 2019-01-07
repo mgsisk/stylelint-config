@@ -159,7 +159,6 @@ module.exports = {
     // ----- Plugins -----------------------------------------------------------
 
     'plugin/declaration-block-no-ignored-properties': true,
-    'plugin/stylelint-no-indistinguishable-colors': true,
     'order/properties-alphabetical-order': true,
     'csstools/use-nesting': 'always',
   },
