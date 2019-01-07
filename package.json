@@ -30,7 +30,6 @@
   "bugs": "https://github.com/mgsisk/stylelint-config/issues",
   "homepage": "https://github.com/mgsisk/stylelint-config",
   "dependencies": {
-    "stylelint-a11y": "^1.1.9",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-wordpress": "^13.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
