@@ -8,9 +8,7 @@
 module.exports = {
   formatter: 'string',
   plugins: [
-    'stylelint-a11y',
     'stylelint-declaration-block-no-ignored-properties',
-    'stylelint-no-indistinguishable-colors',
     'stylelint-order',
     'stylelint-use-nesting',
   ],
