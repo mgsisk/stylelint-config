@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.0][] (2018-01-07)
+
+### Changed
+- Hex colors are now allowed
+- Line length limit increased from `80` to `120`
+- `vru` is now allowed as a unit for `line-height` properties
+
+### Removed
+- `stylelint-a11y`
+- `stylelint-no-indistinguishable-colors`
+
+
 ## [0.3.0][] (2018-12-10)
 
 ### Added
@@ -36,6 +48,7 @@
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
+[0.4.0]: https://github.com/mgsisk/eslint-config/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mgsisk/eslint-config/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mgsisk/eslint-config/compare/v0.1.3...v0.2.0
 [0.1.3]: https://github.com/mgsisk/eslint-config/compare/v0.1.2...v0.1.3
