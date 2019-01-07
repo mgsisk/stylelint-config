@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.2][] (2018-01-07)
+
+### Added
+- `max-size` and `min-size` to ignored properties for `property-no-unknown`
+
+### Changed
+- `mlh` is now allowed as a unit for `font-size` properties to suppor the
+  `postcss-short` shorthand notation `font-size: FontSize / LineHeight`
+
 ## [0.4.1][] (2018-01-07)
 
 ### Fixed
