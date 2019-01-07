@@ -18,7 +18,7 @@ module.exports = {
 
     'font-family-no-missing-generic-family-keyword': null,
     'unit-no-unknown': [true, {ignoreUnits: ['mfs', 'mlh', 'msu', 'vru']}],
-    'property-no-unknown': [true, {ignoreProperties: ['size']}],
+    'property-no-unknown': [true, {ignoreProperties: ['max-size', 'min-size', 'size']}],
     'block-no-empty': null,
 
     // ----- Limit Language Features -------------------------------------------
