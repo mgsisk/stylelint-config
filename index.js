@@ -152,7 +152,7 @@ module.exports = {
     indentation: 2,
     linebreaks: 'unix',
     'max-empty-lines': 1,
-    'max-line-length': 80,
+    'max-line-length': 120,
     'no-eol-whitespace': true,
     'no-missing-end-of-source-newline': true,
     'no-empty-first-line': true,
