@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.4.1][] (2018-01-07)
+
+### Fixed
+- Incorrect references to `stylelint-a11y` and `stylelint-no-indistinguishable-colors`
+
 ## [0.4.0][] (2018-01-07)
 
 ### Changed
@@ -10,7 +15,6 @@
 ### Removed
 - `stylelint-a11y`
 - `stylelint-no-indistinguishable-colors`
-
 
 ## [0.3.0][] (2018-12-10)
 
