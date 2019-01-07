@@ -26,7 +26,6 @@ module.exports = {
     // ----- Limit Language Features -------------------------------------------
 
     'color-named': 'always-where-possible',
-    'color-no-hex': true,
     'function-url-no-scheme-relative': true,
     'number-max-precision': 5,
     'time-min-milliseconds': 100,
