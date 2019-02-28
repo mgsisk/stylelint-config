@@ -17,8 +17,8 @@ module.exports = {
 
     'color-no-hex': null,
     'declaration-property-unit-whitelist': {
-      'line-height': ['mlh'],
       'font-size': ['mfs', 'mlh'],
+      'line-height': ['mlh', 'vru'],
     },
 
     // ----- Limit Language Features -------------------------------------------
