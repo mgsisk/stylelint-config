@@ -6,12 +6,12 @@
   "scripts": {
     "clean": "find . -name '*.DS_Store' -type f -delete",
     "lint.js": "eslint '**/*.js' '**/.*.js'",
-    "lint.json": "jsonlint-cli '**/*.json' '**/.*.json'",
+    "lint.json": "find . \\( -name '*.json' -o -name '.*.json' \\) ! -path '*/node_modules/*' ! -path '*/vendor/*' ! -path '*/.nyc_output/*' | xargs -L1 jsonlint -q",
     "lint.md": "remark .",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
     "preversion": "npm test",
     "postversion": "git push --follow-tags",
-    "test": "npm run lint.js; tap tests --coverage-report=lcovonly"
+    "test": "tap tests --coverage-report=lcovonly"
   },
   "repository": "github:mgsisk/stylelint-config",
   "keywords": [
@@ -34,16 +34,16 @@
     "stylelint-config-wordpress": "^13.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
     "stylelint-order": "^2.0.0",
-    "stylelint-use-nesting": "^1.1.0"
+    "stylelint-use-nesting": "^1.2.1"
   },
   "devDependencies": {
-    "@mgsisk/eslint-config": "^0.6.2",
+    "@mgsisk/eslint-config": "^0.7.0",
     "@mgsisk/remark-lint-config": "^0.1.2",
-    "eslint": "^5.12.0",
-    "jsonlint-cli": "^1.0.1",
+    "eslint": "^5.14.1",
+    "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
-    "stylelint": "^9.9.0",
-    "tap": "^12.1.1",
+    "stylelint": "^9.10.1",
+    "tap": "^12.5.3",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
