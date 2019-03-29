@@ -33,17 +33,17 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-wordpress": "^13.1.0",
     "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
-    "stylelint-order": "^2.0.0",
+    "stylelint-order": "^2.1.0",
     "stylelint-use-nesting": "^1.2.1"
   },
   "devDependencies": {
     "@mgsisk/eslint-config": "^0.7.0",
     "@mgsisk/remark-lint-config": "^0.1.2",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.3",
     "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
     "stylelint": "^9.10.1",
-    "tap": "^12.5.3",
+    "tap": "^12.6.1",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
