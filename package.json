@@ -30,20 +30,20 @@
   "bugs": "https://github.com/mgsisk/stylelint-config/issues",
   "homepage": "https://github.com/mgsisk/stylelint-config",
   "dependencies": {
-    "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-wordpress": "^13.1.0",
-    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
-    "stylelint-order": "^2.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-wordpress": "^14.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
+    "stylelint-order": "^3.0.0",
     "stylelint-use-nesting": "^1.2.1"
   },
   "devDependencies": {
-    "@mgsisk/eslint-config": "^0.7.0",
-    "@mgsisk/remark-lint-config": "^0.1.2",
-    "eslint": "^5.15.3",
+    "@mgsisk/eslint-config": "^0.8.0",
+    "@mgsisk/remark-lint-config": "^0.2.0",
+    "eslint": "^6.0.1",
     "jsonlint": "^1.6.3",
     "remark-cli": "^6.0.1",
-    "stylelint": "^9.10.1",
-    "tap": "^12.6.1",
+    "stylelint": "^10.1.0",
+    "tap": "^14.4.0",
     "yaml-lint": "^1.2.4"
   },
   "peerDependencies": {
