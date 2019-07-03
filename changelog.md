@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.4][] (2019-07-03)
+
+### Changed
+- `vru` is now allowed as a unit for `line-height` properties in the WordPress
+  standard
+
 ## [0.4.3][] (2018-03-29)
 
 ### Changed
@@ -66,6 +72,7 @@
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
+[0.4.4]: https://github.com/mgsisk/eslint-config/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/mgsisk/eslint-config/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/mgsisk/eslint-config/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/mgsisk/eslint-config/compare/v0.4.0...v0.4.1
