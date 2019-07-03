@@ -16,7 +16,7 @@ module.exports = {
     // ----- Limit Language Features -------------------------------------------
 
     'declaration-property-unit-whitelist': {
-      'font-size': ['mfs', 'mlh'],
+      'font-size': ['mfs', 'mlh', 'vru'],
       'line-height': ['mlh', 'vru'],
     },
 
