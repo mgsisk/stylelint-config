@@ -4,6 +4,10 @@ Documents notable project changes. Versions are [semantic][].
 
 ## [Unreleased][]
 
+- No unreleased changes
+
+## [0.5.0][] - 2020-04-12
+
 ### Changed
 
 - `max-nesting-depth` increaed to 8
@@ -97,7 +101,8 @@ Documents notable project changes. Versions are [semantic][].
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
-[unreleased]: https://github.com/mgsisk/stylelint-config/compare/v0.4.4...HEAD
+[unreleased]: https://github.com/mgsisk/stylelint-config/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/mgsisk/stylelint-config/compare/v0.4.4...v0.5.0
 [0.4.4]: https://github.com/mgsisk/stylelint-config/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/mgsisk/stylelint-config/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/mgsisk/stylelint-config/compare/v0.4.1...v0.4.2
