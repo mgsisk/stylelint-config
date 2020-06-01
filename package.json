@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-config-wordpress": "^16.0.0",
+    "stylelint-config-wordpress": "^17.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.0.0",
     "stylelint-use-nesting": "^2.0.0"
