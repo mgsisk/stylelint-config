@@ -26,7 +26,7 @@ jobs:
           api_key:
             secure: Dv1rTULMpRtlsb4ATGbwGo/Gy3AJKU/5q67z8NaLyu0OlaVOcU5DwqBB5KZKObUC6MjM8paCvfH1+fQ5T8pGDqvwD2eT3FPU/gGoaM3/Cw8vfPAR//oh1a4hbRYt0cYllCg8KP2omatN6O1oO6WotRQetVN2wHTIK6nsGl/GGZw0nECnsvZaP36FQieXcxOmaO/HEXMAdN+lAlb/QA5R/Ub6gU5X5t+slO91z/q7K1PXFHuz+c6umym5pEuCs4XEWLj/CS0s5LWST2brQaFRQ4RTkg8zLpUXO5pTNoQgDIjOWjfw9wdPcWQ61tQY4Eh36Qwo5ouJQd62qsNVtZ2wmA0S3abIFPQ07bgV0j64djV/w4HRHMYLnjQdSwuL/YQQakxBIABTamoXWnzppetEVDJABcpSjN7TJfFM+c6jSdS3GLmmK98XMzTNIIzwv75fCBq9uUJZNid4OUsZIpLgudKGwp/g/UKl1Uxp1YHMic8lTEZ3RWMFZYlOjcncO2ZC5pr9qD5uzkNTf2DQvefg/dwZ/eoxaDjT+arbeCCGMDMVatoBHRhk7NvvNmCtXjRDHLiPNPSxzbJxEzDLPw1GKxXkswTdl0XqZrhJW61eIkCFJywTlCnSC2yzg/3DpWh5AFnvxX/uUn64xN/kz9le9s0WlND96snjJEQP+ddVx9E=
           on:
-            repo: mgsisk/eslint-config
+            repo: mgsisk/stylelint-config
             tags: true
         - provider: npm
           registry: https://npm.pkg.github.com
@@ -36,5 +36,5 @@ jobs:
           edge:
             branch: master
           on:
-            repo: mgsisk/eslint-config
+            repo: mgsisk/stylelint-config
             tags: true
