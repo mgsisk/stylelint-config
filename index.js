@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     // ----- Possible Errors ---------------------------------------------------
     'block-no-empty': null,
+    'font-family-no-missing-generic-family-keyword': [true, {ignoreFontFamilies: [/\d+(mfs|mlh|msu|vru)/u]}],
     'property-no-unknown': [true, {ignoreProperties: ['max-size', 'min-size', 'size']}],
     'unit-no-unknown': [true, {ignoreUnits: ['mfs', 'mlh', 'msu', 'vru']}],
 
