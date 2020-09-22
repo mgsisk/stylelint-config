@@ -1,5 +1,3 @@
-'use strict'
-
 const tap = require('tap')
 const stylelint = require('stylelint')
 const config = require('../wordpress.js')
