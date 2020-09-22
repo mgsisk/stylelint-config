@@ -35,6 +35,7 @@ module.exports = {
     // 'declaration-property-unit-disallowed-list': [],
     // 'declaration-property-value-allowed-list': [],
     // 'declaration-property-value-disallowed-list': [],
+    'font-weight-notation': ['numeric', {ignore: ['relative']}],
     // 'function-allowed-list': [],
     // 'function-disallowed-list': [],
     // 'function-url-scheme-allowed-list': [],
