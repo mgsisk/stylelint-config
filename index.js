@@ -23,6 +23,7 @@ module.exports = {
     // 'at-rule-disallowed-list': [],
     'at-rule-no-vendor-prefix': true,
     // 'at-rule-property-required-list': [],
+    'color-function-notation': 'modern',
     'color-named': 'always-where-possible',
     // 'color-no-hex': true,
     // 'comment-word-disallowed-list': [],
