@@ -83,13 +83,11 @@ No unreleased changes.
 ## [0.3.0][] - 2018-12-10
 
 ### Added
-
 - `stylelint-use-nesting` plugin
 
 ## [0.2.0][] - 2018-12-10
 
 ### Changed
-
 - Moved npm deployment to Travis configuration
 - Replaced `js-yaml` with `yaml-lint`
 - Replaced `jsonlint` with `jsonlint-cli`
@@ -98,25 +96,21 @@ No unreleased changes.
 ## [0.1.3][] - 2018-12-06
 
 ### Fixed
-
 - Installation instructions in readme
 
 ## [0.1.2][] - 2018-12-06
 
 ### Fixed
-
 - Broken URL's in repo documentation
 
 ## [0.1.1][] - 2018-12-06
 
 ### Fixed
-
 - Linting issues
 
 ## [0.1.0][] - 2018-12-06
 
 ### Added
-
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
