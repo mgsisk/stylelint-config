@@ -10,7 +10,7 @@
     "lint.md": "remark . .github/ --ignore-pattern 'LICENSE*'",
     "lint.sh": "shellcheck *.sh",
     "lint.yml": "yamllint '**/*.yml' '**/.*.yml'",
-    "test": "tap test --100 --coverage-report=lcov --no-browser",
+    "test": "tap test",
     "preversion": "npm test",
     "version": "git add --all",
     "postversion": "git push --follow-tags"
