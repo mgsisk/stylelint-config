@@ -6,6 +6,11 @@ Notable project changes. Versions are [semantic][].
 
 No unreleased changes.
 
+## [0.6.1][] - 2020-09-22
+
+### Fixed
+- Deployment configuration
+
 ## [0.6.0][] - 2020-09-22
 
 ### Added
@@ -115,7 +120,8 @@ No unreleased changes.
 - Standard stylelint configuration
 - WordPress stylelint configuration
 
-[unreleased]: https://github.com/mgsisk/stylelint-config/compare/v0.6.0...HEAD
+[unreleased]: https://github.com/mgsisk/stylelint-config/compare/v0.6.1...HEAD
+[0.6.1]: https://github.com/mgsisk/stylelint-config/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/mgsisk/stylelint-config/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/mgsisk/stylelint-config/compare/v0.4.4...v0.5.0
 [0.4.4]: https://github.com/mgsisk/stylelint-config/compare/v0.4.3...v0.4.4
