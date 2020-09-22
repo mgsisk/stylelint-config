@@ -1,8 +1,8 @@
 language: node_js
 
 node_js:
-  - lts/*
   - node
+  - lts/*
 
 env:
   global:
@@ -16,11 +16,25 @@ before_script:
 after_script:
   - ./cctr after-build -t lcov --exit-code $TRAVIS_TEST_RESULT
 
-deploy:
-  provider: npm
-  email: me@mgsisk.com
-  api_key:
-    secure: Nxcd0yNGI4GCTJqKi+AyK+ZGlE8bwcLLainMdbAnT37YhIHzE5i84Wn3OxHM5pwu+HS9+I+VZAEssiNZSRNYhAJwyMrYyRq5cOxZYTa/ie2Z4F5+tm+t+hBXl5RUQGLbusVZvg4HojmeoSTYwQ13irtYe/YxuwSkbgt9Chm19e+Cyb+aqsxrs4jYBzXNtNRki3AvOV0cPZEn87KKOn/9Pul4dv4VP8y5kJmNPg5zje+boKAdqfYL+fRTCVpUaxvDFjk5t2QqH2O6b7DqGVu+KoVSzvCAfxtKeqDDsMTxFF6N/yL7hQpX3cLAc/yyVULoKPFVITYAaaRR/IjDYvfwzTpSigYEBocaotUIGMZHctaB7PgB2nbLnya4bKzQYd+euBmZOifSajn/bLm1Tq5CGEzT6MvVrDExRv+Q6O40X/uY1NlAT9TeOdmsK5ziSdSVIR+X8uk8Nl7t+wt0BkvBLO2+wMmthSSCl29nfxn1aMpc/OnMexRaS/TWlbfy34hlLr+XD/cz5MzBXhgVy3CUR1NMSBJChznn3xM3re2PAVmmaRlZw8lZl9pE4w26Jx2Y/fs0//1qGIpHSpX/FgYj9EJ5wqicWBSM3xDrfQqlBiUEiSYsI4qUq2r3oLmrIAXONMu8zcL8mALX9eirTd1qGij7yQJnTx/HpmOx+0/7dak=
-  on:
-    repo: mgsisk/stylelint-config
-    tags: true
+jobs:
+  include:
+    - stage: deploy
+      script: skip
+      deploy:
+        - provider: npm
+          email: me@mgsisk.com
+          api_key:
+            secure: Dv1rTULMpRtlsb4ATGbwGo/Gy3AJKU/5q67z8NaLyu0OlaVOcU5DwqBB5KZKObUC6MjM8paCvfH1+fQ5T8pGDqvwD2eT3FPU/gGoaM3/Cw8vfPAR//oh1a4hbRYt0cYllCg8KP2omatN6O1oO6WotRQetVN2wHTIK6nsGl/GGZw0nECnsvZaP36FQieXcxOmaO/HEXMAdN+lAlb/QA5R/Ub6gU5X5t+slO91z/q7K1PXFHuz+c6umym5pEuCs4XEWLj/CS0s5LWST2brQaFRQ4RTkg8zLpUXO5pTNoQgDIjOWjfw9wdPcWQ61tQY4Eh36Qwo5ouJQd62qsNVtZ2wmA0S3abIFPQ07bgV0j64djV/w4HRHMYLnjQdSwuL/YQQakxBIABTamoXWnzppetEVDJABcpSjN7TJfFM+c6jSdS3GLmmK98XMzTNIIzwv75fCBq9uUJZNid4OUsZIpLgudKGwp/g/UKl1Uxp1YHMic8lTEZ3RWMFZYlOjcncO2ZC5pr9qD5uzkNTf2DQvefg/dwZ/eoxaDjT+arbeCCGMDMVatoBHRhk7NvvNmCtXjRDHLiPNPSxzbJxEzDLPw1GKxXkswTdl0XqZrhJW61eIkCFJywTlCnSC2yzg/3DpWh5AFnvxX/uUn64xN/kz9le9s0WlND96snjJEQP+ddVx9E=
+          on:
+            repo: mgsisk/eslint-config
+            tags: true
+        - provider: npm
+          registry: https://npm.pkg.github.com
+          email: me@mgsisk.com
+          api_key:
+            secure: MIplfCLt6RW7RThHGQAC5ANl7vMAJPrzGQML8cW2usdnvKss8K5QsgGONDy2MU15T88efKaZP7vq7/1N0EAP8dDeLw5U+n2WVWeMr++V9wKV0Rb+HUT3UtkSkHEYsDJ0CY+M65M8tF4dIqUB0SyZjdkjcxjj5Os15WVz2PfsOkXjbpOjYn68Nsoob5f4//WIjk/8E28gSCxJeq0GuSAPVByXae1HjarXoCktrfdubmJ6rzWV+gt6uAhdurJBrtNNJ8mjBH7gIxpvT309cAhehhfrUfxH5tK5nqRd+85PWkaFLUV5fwPfTZ7dmFjoFFxlKlK+iqsNKtaKswz3/FkGB9Dpf4uZQ7erIdpaVv0ZKuajayKzo2dhfMa30/kznnVFmvK/bxdz1iYuaZkdBi+DZr43a9xlYcQ64J4/aQ6PHWpI4XIOOV+zgjojOo8BX+jCXBT81BjQ4MaFfA0hKr64XmVf+H27u1mAJMbSj9Uftxhf3uBSdzOswU4BF3uPOt+y8c+HUgmbriw6KSZ9PvzT8TPuOWNQHfxskznZoODB7hegT+oPxBtyJ+8olPatBdvaDWE7jS8Bt5nrdVcl0rmbJ6iXH7syzYfgrVz+1QrismKCG2ykRk+iQpsfFbtBEXhiMEMdGlH/moM6hr0CmV5GdUnMvjh6IhHDhE+8OG6XFUI=
+          edge:
+            branch: master
+          on:
+            repo: mgsisk/eslint-config
+            tags: true
