@@ -41,6 +41,7 @@ module.exports = {
     // 'function-url-scheme-allowed-list': [],
     // 'function-url-scheme-disallowed-list:': [],
     'function-url-no-scheme-relative': true,
+    'hue-degree-notation': 'number',
     // 'keyframes-name-pattern': '',
     'max-nesting-depth': 8,
     // 'media-feature-name-allowed-list': [],
