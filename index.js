@@ -18,6 +18,7 @@ module.exports = {
     'unit-no-unknown': [true, {ignoreUnits: ['mfs', 'mlh', 'msu', 'vru']}],
 
     // ----- Limit Language Features -------------------------------------------
+    'alpha-value-notation': 'number',
     // 'at-rule-allowed-list': [],
     // 'at-rule-disallowed-list': [],
     'at-rule-no-vendor-prefix': true,
