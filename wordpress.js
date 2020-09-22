@@ -1,5 +1,3 @@
-'use strict'
-
 /**
  * Stylelint configuration for WordPress development.
  *
@@ -15,7 +13,7 @@ module.exports = {
     'unit-no-unknown': [true, {ignoreUnits: ['mfs', 'mlh', 'msu', 'vru']}],
 
     // ----- Limit Language Features -------------------------------------------
-    'declaration-property-unit-whitelist': null,
+    'declaration-property-unit-allowed-list': null,
     'font-family-name-quotes': null,
   },
 }
