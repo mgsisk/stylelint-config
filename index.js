@@ -89,7 +89,8 @@ module.exports = {
     'declaration-block-semicolon-newline-before': 'never-multi-line',
     // 'font-family-name-quotes': 'always-where-recommended',
     'function-comma-newline-before': 'never-multi-line',
-    'function-url-quotes': 'never',
+    'function-url-quotes': 'always',
+    linebreaks: 'unix',
     'max-line-length': 120,
     'media-query-list-comma-newline-before': 'never-multi-line',
     'no-empty-first-line': true,
@@ -98,7 +99,6 @@ module.exports = {
     'selector-list-comma-space-after': 'always-single-line',
     'string-quotes': 'single',
     'value-list-comma-newline-before': 'never-multi-line',
-    linebreaks: 'unix',
     /* eslint-enable sonarjs/no-duplicate-string */
 
     // ----- Plugins -----------------------------------------------------------
