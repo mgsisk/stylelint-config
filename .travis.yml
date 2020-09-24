@@ -19,7 +19,7 @@ after_script:
 jobs:
   include:
     - stage: deploy
-      script: skip
+      script: npm pack
       deploy:
         - provider: npm
           email: me@mgsisk.com
@@ -35,6 +35,15 @@ jobs:
             secure: MIplfCLt6RW7RThHGQAC5ANl7vMAJPrzGQML8cW2usdnvKss8K5QsgGONDy2MU15T88efKaZP7vq7/1N0EAP8dDeLw5U+n2WVWeMr++V9wKV0Rb+HUT3UtkSkHEYsDJ0CY+M65M8tF4dIqUB0SyZjdkjcxjj5Os15WVz2PfsOkXjbpOjYn68Nsoob5f4//WIjk/8E28gSCxJeq0GuSAPVByXae1HjarXoCktrfdubmJ6rzWV+gt6uAhdurJBrtNNJ8mjBH7gIxpvT309cAhehhfrUfxH5tK5nqRd+85PWkaFLUV5fwPfTZ7dmFjoFFxlKlK+iqsNKtaKswz3/FkGB9Dpf4uZQ7erIdpaVv0ZKuajayKzo2dhfMa30/kznnVFmvK/bxdz1iYuaZkdBi+DZr43a9xlYcQ64J4/aQ6PHWpI4XIOOV+zgjojOo8BX+jCXBT81BjQ4MaFfA0hKr64XmVf+H27u1mAJMbSj9Uftxhf3uBSdzOswU4BF3uPOt+y8c+HUgmbriw6KSZ9PvzT8TPuOWNQHfxskznZoODB7hegT+oPxBtyJ+8olPatBdvaDWE7jS8Bt5nrdVcl0rmbJ6iXH7syzYfgrVz+1QrismKCG2ykRk+iQpsfFbtBEXhiMEMdGlH/moM6hr0CmV5GdUnMvjh6IhHDhE+8OG6XFUI=
           edge:
             branch: master
+          on:
+            repo: mgsisk/stylelint-config
+            tags: true
+        - provider: releases
+          skip_cleanup: true
+          file_glob: true
+          file: mgsisk-stylelint-config-*.tgz
+          api_key:
+            secure: MIplfCLt6RW7RThHGQAC5ANl7vMAJPrzGQML8cW2usdnvKss8K5QsgGONDy2MU15T88efKaZP7vq7/1N0EAP8dDeLw5U+n2WVWeMr++V9wKV0Rb+HUT3UtkSkHEYsDJ0CY+M65M8tF4dIqUB0SyZjdkjcxjj5Os15WVz2PfsOkXjbpOjYn68Nsoob5f4//WIjk/8E28gSCxJeq0GuSAPVByXae1HjarXoCktrfdubmJ6rzWV+gt6uAhdurJBrtNNJ8mjBH7gIxpvT309cAhehhfrUfxH5tK5nqRd+85PWkaFLUV5fwPfTZ7dmFjoFFxlKlK+iqsNKtaKswz3/FkGB9Dpf4uZQ7erIdpaVv0ZKuajayKzo2dhfMa30/kznnVFmvK/bxdz1iYuaZkdBi+DZr43a9xlYcQ64J4/aQ6PHWpI4XIOOV+zgjojOo8BX+jCXBT81BjQ4MaFfA0hKr64XmVf+H27u1mAJMbSj9Uftxhf3uBSdzOswU4BF3uPOt+y8c+HUgmbriw6KSZ9PvzT8TPuOWNQHfxskznZoODB7hegT+oPxBtyJ+8olPatBdvaDWE7jS8Bt5nrdVcl0rmbJ6iXH7syzYfgrVz+1QrismKCG2ykRk+iQpsfFbtBEXhiMEMdGlH/moM6hr0CmV5GdUnMvjh6IhHDhE+8OG6XFUI=
           on:
             repo: mgsisk/stylelint-config
             tags: true
